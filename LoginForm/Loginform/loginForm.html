@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+    <style>
+        /*external css within file*/
+        
+        .redBorder {
+            padding: 10px;
+            font-size: 1px;
+            background: red;
+            margin-bottom: 10px;
+        }
+        /* similar styles like 
+        margin-left,margin-right,margin-bottom */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- div class = "row" example -->
+        <div class="row">
+            <div class="col-xl-2">
+                <div class="divBorder"></div>
+            </div>
+            <div class="col-xl-offset-3   col-xl-1">
+                <div class="redBorder"></div>
+            </div>
+        </div>
+        <!-- div class = "row" example ends here -->
+        <form class="form-horizontal">
+            <div class="form-group">
+                <!-- inline style  style="margin-top: 200px;" -->
+                <div class="col-xl-4 offset-xl-4" style="margin-top: 200px;">
+                    <label for="uname"><b>Username :</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xl-4 offset-xl-4">
+                    <label for="uname"><b>Password :</b></label>
+                    <input type="text" placeholder="Enter Password" name="uname" required>
+                </div>
+            </div>
+    </div>
+    </div>
+
+
+    <!-- jqery from cdn 
+    bootstrap.js, bootstrap.css file from downloaded file from bootstrap.com
+    loginForm.css customized external css file -->
+
+    <!-- scripts are placed in head/body section, prefer end of body section 
+    because these scripts are loaded after the dom loaded -->
+
+    <!-- ****************************direcory paths:********************************************* -->
+    <!-- Starting with "/" returns to the root directory and starts there
+Starting with "../" moves one directory backwards and starts there
+Starting with "../../" moves two directories backwards and starts there (and so on...)
+To move forward, just start with the first subdirectory and keep moving forward 
+
+ https://stackoverflow.com/questions/27218879/link-a-css-on-another-folder -->
+
+    <!-- **************************************************************************************** -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="../../bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../../bootstrap-4.3.1-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../Loginform/loginForm.css" />
+</body>
+
+</html>
