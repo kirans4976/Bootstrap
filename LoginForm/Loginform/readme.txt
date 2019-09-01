@@ -1,1 +1,8 @@
-alt + shift + f >> formatting options (select html format options)
+used  bootstrap classes 
+
+row,
+form,
+form-horizontal,
+form-group,
+offset
+
